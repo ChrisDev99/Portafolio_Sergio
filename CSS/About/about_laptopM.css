@@ -1,0 +1,25 @@
+footer section
+{
+    width: 25%;
+}
+
+.footer-achievements-card
+{
+    padding-left: 20px;
+}
+
+.footer-software-skills-card
+{
+    width: 25%;
+    padding-left: 50px;
+}
+
+.right-side-container .software-skills-container li
+{
+    margin-left: 80px;
+}
+
+.right-side-container .contact-links-container li
+{
+    margin-left: 40px;
+}

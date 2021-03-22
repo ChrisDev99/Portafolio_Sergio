@@ -201,7 +201,7 @@ body
         margin-right: 20px;
     }
 
-    .footer-achivements-card h3
+    .footer-achievements-card h3
     {
         margin-left: 2rem;
         margin-bottom: 5px;
@@ -239,6 +239,7 @@ body
 
     .contact-links-container li a
     {
+        font-style: italic;
         text-decoration: none;
         color: var(--white);
     }

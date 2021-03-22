@@ -7,6 +7,44 @@ body
 }
 
 /*Empieza header*/
+    header nav
+    {
+        padding: 0 20px;
+    }
+
+    nav .menu-icon-container
+    {
+        display: none;
+        width: 75%;
+    }
+
+    nav .menu-links-container
+    {
+        display: flex;
+        width: 25%;
+        height: auto;
+        flex-direction: row;
+        position: static;
+        justify-content: space-around;
+        align-items: center;
+        transition: none;
+    }
+
+    nav .menu-links-container .close-menu-icon-container
+    {
+        display: none;
+    }
+
+    .hr-header
+    {
+        width: 1px;
+        height: 30px;
+    }
+
+    nav .menu-links-container li a
+    {
+        padding: 10px 40px;
+    }
 /*Termina header*/
 /*Empieza main*/
     main
@@ -30,14 +68,18 @@ body
     footer
     {
         flex-direction: row;
-        color: #707070;
+        color: #818181;
     }
 
     footer section
     {
-        width: 25%;
-        padding: 20px;
+        width: 26%;
         flex-direction: column;
+    }
+
+    .footer-software-skills-card
+    {
+        width: 20%;
     }
 
     .hr-footer
@@ -67,11 +109,11 @@ body
 
     .right-side-container .contact-links-container li
     {
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
     .contact-links-container li a
     {
-        color: #707070;
+        color: #818181;
     }
 /*Termina footer*/

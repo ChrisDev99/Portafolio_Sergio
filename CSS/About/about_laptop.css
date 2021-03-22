@@ -1,0 +1,77 @@
+body
+{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Empieza header*/
+/*Termina header*/
+/*Empieza main*/
+    main
+    {
+        padding: 0 120px;
+    }
+
+    .main-left-side-container
+    {
+        width: 40%;
+        padding: 20px 40px;
+    }
+
+    .main-right-side-container
+    {
+        width: 60%;
+        padding: 20px;
+    }
+/*Termina main*/
+/*Empieza footer*/
+    footer
+    {
+        flex-direction: row;
+        color: #707070;
+    }
+
+    footer section
+    {
+        width: 25%;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .hr-footer
+    {
+        display: none;
+    }
+
+    .left-side-container
+    {
+        width: initial;
+        padding: 0;
+        margin-bottom: 15px;
+        justify-content: initial;
+    }
+
+    .right-side-container
+    {
+        width: initial;
+        padding: 0;
+    }
+
+    .right-side-container .software-skills-container li
+    {
+        margin-left: 60px;
+        margin-bottom: 5px;
+    }
+
+    .right-side-container .contact-links-container li
+    {
+        margin-left: 40px;
+    }
+
+    .contact-links-container li a
+    {
+        color: #707070;
+    }
+/*Termina footer*/

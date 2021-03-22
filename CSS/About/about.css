@@ -1,0 +1,245 @@
+:root
+{
+    --header-background: #1a1a1a;
+    --main-background: #121212;
+    --grey: #5e5e5e4f;
+    --white: #ffffff;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: var(--main-background);
+}
+
+/*Empieza header*/
+    header
+    {
+        width: 100%;
+        height: auto;
+        background-color: var(--header-background);
+        box-shadow: 20px 0 10px;
+    }
+
+    header nav
+    {
+        display: flex;
+        color: var(--white);
+        justify-content:space-between;
+    }
+
+    nav .logo-container
+    {
+        display: block;
+        margin: 20px;
+    }
+
+    nav .logo-container h1
+    {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    nav .menu-icon-container
+    {
+        display: block;
+        margin: 20px;
+        font-size: 2rem;
+        align-self: center;
+    }
+
+    nav .menu-links-container
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--header-background);
+        transition: top 1s ease;
+        list-style: none;
+        display: none;
+    }
+
+    nav .menu-links-container li a
+    {
+        display: inline-block;
+        padding: 15px;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    nav .menu-links-container li:hover
+    {
+        border-radius: 5px;
+        background-color: var(--grey);
+    }
+
+    nav .menu-links-container .close-menu-icon-container
+    {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+    }
+
+    .hr-header
+    {
+        width: 50%;
+        margin: 10px 0;
+    }
+/*Termina header*/
+/*Empieza main*/
+    main
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        padding: 0 20px;
+        color: var(--white);
+    }
+
+    .main-left-side-container
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-left-side-container h2
+    {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .main-right-side-container
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-right-side-container p
+    {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 1px;
+        text-align: justify;
+    }
+
+    .main-right-side-container__first-paragraph
+    {
+        margin-bottom: 15px;
+    } 
+/*Termina main*/
+/*Empieza footer*/
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        color: var(--white);
+    }
+
+    footer section
+    {
+        margin: 20px 0;
+    }
+
+    footer section h2
+    {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    footer section ul li
+    {
+        margin-left: 40px;
+        margin-bottom: 10px;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 1px;
+        text-align: justify;
+    }
+
+    .hr-footer
+    {
+        width: 100%;
+        margin: 10px 0;
+        align-self: center;
+    }
+
+    .experiences-container li
+    {
+        margin-right: 20px;
+    }
+
+    .footer-achivements-card h3
+    {
+        margin-left: 2rem;
+        margin-bottom: 5px;
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+
+    .achievements-container li
+    {
+        margin-left: 60px;
+        margin-right: 20px;
+    }
+
+    .contact-links-container li
+    {
+        width: max-content;
+        padding: 5px;
+        margin-left: 20px;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .contact-links-container li:hover
+    {
+        border-radius: 5px;
+        background-color: var(--grey);
+    }
+
+    .contact-links-container li i
+    {
+        font-size: 1.8rem;
+        margin-right: 10px;
+    }
+
+    .contact-links-container li a
+    {
+        text-decoration: none;
+        color: var(--white);
+    }
+/*Termina footer*/

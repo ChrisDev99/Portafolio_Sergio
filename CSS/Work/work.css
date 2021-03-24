@@ -22,6 +22,9 @@ html
 
 body
 {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
     background-color: var(--main-background);
 }
 
@@ -116,132 +119,121 @@ body
     main
     {
         display: flex;
-        flex-direction: column;
-        margin: 40px 0;
-        padding: 0 30px;
+        height: 100%;
+        margin: 35px 0;
+        align-items: center;
+    }
+
+    .slider
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .prev-button, .next-button
+    {
+        display: flex;
+        width: 45px;
+        height: 45px;
+        margin-top: 40px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        font-size: 2.5rem;
         color: var(--white);
+        background-color: unset;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-50%);
+        transition: all 0.3s;
     }
 
-    .main-left-side-container
+    .slides-container
     {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
-
-    .main-left-side-container h2
-    {
-        margin-bottom: 15px;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 2.4rem;
-    }
-
-    .main-right-side-container
+    
+    .slide-container
     {
         width: 100%;
-        height: auto;
+        height: 100%;
+        display: none;
     }
 
-    .main-right-side-container p
-    {
-        font-weight: 300;
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-        letter-spacing: 1px;
-        text-align: justify;
-    }
-
-    .main-right-side-container__first-paragraph
-    {
-        margin-bottom: 15px;
-    } 
-/*Termina main*/
-/*Empieza footer*/
-    footer
+    .slide-container.active
     {
         display: flex;
         flex-direction: column;
-        padding: 0 30px;
-        color: var(--white);
+        align-items: center;
     }
 
-    footer section
+    .slide-container.active h2
     {
-        margin: 40px 0;
+        display: flex;
+        align-items: center;
     }
 
-    footer section h2
+    .slide-container.active a .img-container
     {
-        margin-bottom: 15px;
+        animation: fade-in 0.4s 1;
+    }
+
+    @keyframes fade-in
+    {
+        from
+        {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to
+        {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .slide-container.active h2
+    {
+        height: 10%;
         font-weight: 500;
         font-size: 2rem;
         line-height: 2.4rem;
-    }
-
-    footer section ul li
-    {
-        margin-left: 40px;
-        margin-bottom: 10px;
-        font-weight: 300;
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-        letter-spacing: 1px;
-        text-align: justify;
-    }
-
-    .hr-footer
-    {
-        width: 60%;
-        margin: 10px 0;
-        margin-bottom: 10px;
-        align-self: center;
-    }
-
-    .experiences-container li
-    {
-        margin-right: 20px;
-    }
-
-    .footer-achievements-card h3
-    {
-        margin-left: 2rem;
-        margin-bottom: 5px;
-        font-weight: 300;
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-    }
-
-    .achievements-container li
-    {
-        margin-left: 60px;
-        margin-right: 20px;
-    }
-
-    .contact-links-container li
-    {
-        width: max-content;
-        padding: 5px;
-        margin-left: 20px;
-        margin-bottom: 0;
-        list-style: none;
-    }
-
-    .contact-links-container li:hover
-    {
-        border-radius: 5px;
-        background-color: var(--grey);
-    }
-
-    .contact-links-container li i
-    {
-        font-size: 1.8rem;
-        margin-right: 10px;
-    }
-
-    .contact-links-container li a
-    {
-        font-style: italic;
-        text-decoration: none;
         color: var(--white);
     }
-/*Termina footer*/
+
+    .slide-container.active a
+    {
+        width: 100%;
+        height: 90%;
+    }
+
+    .img-container
+    {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    .img-container.mobiliario-flatpack
+    {
+        background-image: url('/Img/Flatpack/Portada_Render3/mobile-tablet.jpg');
+    }
+
+    .img-container.silla-ciclo
+    {
+        background-image: url('/Img/Ciclo/Portada_Detalle3/mobile-tablet.jpg');
+    }
+
+    .img-container.mesa-atlas
+    {
+        background-image: url('/Img/Atlas/Portada_Render2/mobile-tablet.jpg');
+    }
+
+    .img-container.img-container.envase-perfume
+    {
+        background-image: url('/Img/Vidrio/Portada_Render1/mobile-tablet.jpg');
+    }
+/*Termina main*/

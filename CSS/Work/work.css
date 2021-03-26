@@ -120,7 +120,7 @@ body
     {
         display: flex;
         height: 100%;
-        margin: 35px 0;
+        margin: 40px 0;
         align-items: center;
     }
 
@@ -156,26 +156,43 @@ body
     
     .slide-container
     {
+        display: flex;
         width: 100%;
         height: 100%;
+        flex-direction: column;
+        align-items: center;
         display: none;
     }
 
     .slide-container.active
     {
         display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
-    .slide-container.active h2
+    .slide-container h2
     {
         display: flex;
+        height: 10%;
         align-items: center;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: var(--white);
     }
 
-    .slide-container.active a .img-container
+    .slide-container a
     {
+        width: 100%;
+        height: 90%;
+    }
+
+    .slide-container a .img-container
+    {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
         animation: fade-in 0.4s 1;
     }
 
@@ -191,30 +208,6 @@ body
             opacity: 1;
             transform: translateX(0);
         }
-    }
-
-    .slide-container.active h2
-    {
-        height: 10%;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        color: var(--white);
-    }
-
-    .slide-container.active a
-    {
-        width: 100%;
-        height: 90%;
-    }
-
-    .img-container
-    {
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-size:cover;
-        background-repeat: no-repeat;
     }
 
     .img-container.mobiliario-flatpack

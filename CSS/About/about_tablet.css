@@ -1,61 +1,19 @@
-/*Empieza main*/
-    main
-    {
-        flex-direction: row;
-        padding: 0 40px;
-    }
+main
+{
+    padding: 0 60px;
+}
 
-    .main-left-side-container
-    {
-        display: flex;
-        width: 25%;
-        padding: 20px 40px;
-        justify-content: flex-end;
-    }
+.main-left-side-container h2
+{
+    margin-bottom: 20px;
+}
 
-    .main-right-side-container
-    {
-        width: 75%;
-        padding: 20px;
-    }
-/*Termina main*/
-/*Empieza footer*/
-    footer
-    {
-        padding: 0 40px;
-    }
+footer
+{
+    padding: 0 60px;
+}
 
-    footer section
-    {
-        display: flex;
-    }
-
-    .hr-footer
-    {
-        width: 50%;
-    }
-
-    .left-side-container
-    {
-        display: flex;
-        width: 25%;
-        padding: 20px 40px;
-        justify-content: flex-end;
-    }
-
-    .right-side-container
-    {
-        width: 75%;
-        padding: 20px;
-    }
-
-    .right-side-container .software-skills-container li
-    {
-        margin-left: 80px;
-    }
-
-    .right-side-container .contact-links-container li
-    {
-        margin-left: 60px;
-    }
-/*Termina footer*/
+footer section h2
+{
+    margin-bottom: 20px;
+}

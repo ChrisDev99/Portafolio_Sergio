@@ -120,20 +120,28 @@ body
     {
         display: flex;
         height: 100%;
-        margin: 40px 0;
+        justify-content: space-around;
         align-items: center;
     }
 
     .slider
     {
-        width: 100%;
-        height: 100%;
+        width: 65%;
+        height: 76%;
+    }
+
+    @media (min-height: 812px)
+    {
+        .slider
+        {
+            height: 61%;
+        }
     }
 
     .prev-button, .next-button
     {
         display: flex;
-        width: 45px;
+        width: 56px;
         height: 45px;
         margin-top: 40px;
         border-radius: 50%;
@@ -150,8 +158,10 @@ body
 
     .slides-container
     {
+        display: flex;
         width: 100%;
         height: 100%;
+        justify-content: center;
     }
     
     .slide-container
@@ -174,9 +184,9 @@ body
         display: flex;
         height: 10%;
         align-items: center;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 2.4rem;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
         color: var(--white);
     }
 
@@ -191,7 +201,7 @@ body
         width: 100%;
         height: 100%;
         background-position: center;
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
         animation: fade-in 0.4s 1;
     }

@@ -1,0 +1,187 @@
+:root
+{
+    --header-background: #1a1a1a;
+    --main-background: #121212;
+    --grey: #5e5e5e4f;
+    --white: #ffffff;
+}
+
+body
+{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/*Empieza header*/
+    header
+    {
+        height: auto;
+    }
+
+    header nav
+    {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    nav .menu-icon-container
+    {
+        display: none;
+        width: 75%;
+    }
+
+    nav .menu-links-container
+    {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: row;
+        position: static;
+        justify-content: space-around;
+        align-items: center;
+        transition: none;
+    }
+
+    nav .menu-links-container .close-menu-icon-container
+    {
+        display: none;
+    }
+
+    .hr-header
+    {
+        width: 1px;
+        height: 30px;
+    }
+
+    nav .menu-links-container li a
+    {
+        padding: 10px 40px;
+    }
+/*Termina header*/
+/*Empieza main*/
+    main
+    {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .prev-button, .next-button
+    {
+        display: flex;
+        width: 10%;
+        height: 80%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 2.5rem;
+        color: var(--white);
+        background-color: unset;
+        justify-content: center;
+        align-items: center;
+        cursor:pointer;
+        transition: all 0.3s;
+    }
+
+    .prev-button:hover, .next-button:hover
+    {
+        font-size: 4rem;
+        background-color: var(--grey);
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+    }
+
+    .slider
+    {
+        width: 80%;
+        height: 100%;
+    }
+
+    .slides-container
+    {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide-container
+    {
+        display: flex;
+        max-width: 819px;
+        max-height: 584px;
+        padding: 80px;
+        justify-content: center;
+        animation: fade-in 0.8s 1;
+        display: none;
+    }
+
+    .slide-container.img
+    {
+        padding: 0;
+        flex-direction: row;
+    }
+
+    @keyframes fade-in
+    {
+        from
+        {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to
+        {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    div hr
+    {
+        display: none;
+    }
+
+    .slide-container.active
+    {
+        display: flex;
+    }
+
+    .img-container, .video-container
+    {
+        padding: 30px;
+    }
+
+    .img-container.vertical, .video-container
+    {
+        width: 50%;
+    }
+
+    .img-container.horizontal
+    {
+        width: 100%;
+    }
+
+    .img-container.vertical img
+    {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .video-container video
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img-container.horizontal img
+    {
+        width: 100%;
+        object-fit: contain;
+    }
+/*Termina main*/

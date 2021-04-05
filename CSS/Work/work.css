@@ -222,21 +222,21 @@ body
 
     .img-container.mobiliario-flatpack
     {
-        background-image: url('/Img/Flatpack/Portada_Render3/mobile-tablet.jpg');
+        background-image: url('./Img/Flatpack/Portada_Render3/mobile-tablet.jpg');
     }
 
     .img-container.silla-ciclo
     {
-        background-image: url('/Img/Ciclo/Portada_Detalle3/mobile-tablet.jpg');
+        background-image: url('./Img/Ciclo/Portada_Detalle3/mobile-tablet.jpg');
     }
 
     .img-container.mesa-atlas
     {
-        background-image: url('/Img/Atlas/Portada_Render2/mobile-tablet.jpg');
+        background-image: url('./Img/Atlas/Portada_Render2/mobile-tablet.jpg');
     }
 
     .img-container.img-container.envase-perfume
     {
-        background-image: url('/Img/Vidrio/Portada_Render1/mobile-tablet.jpg');
+        background-image: url('./Img/Vidrio/Portada_Render1/mobile-tablet.jpg');
     }
 /*Termina main*/

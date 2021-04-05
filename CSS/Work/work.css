@@ -143,7 +143,6 @@ body
         display: flex;
         width: 56px;
         height: 45px;
-        margin-top: 40px;
         border-radius: 50%;
         border: none;
         outline: none;
@@ -152,7 +151,6 @@ body
         background-color: unset;
         justify-content: center;
         align-items: center;
-        transform: translateY(-50%);
         transition: all 0.3s;
     }
 
@@ -196,13 +194,10 @@ body
         height: 90%;
     }
 
-    .slide-container a .img-container
+    .slide-container a picture
     {
         width: 100%;
         height: 100%;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         animation: fade-in 0.4s 1;
     }
 
@@ -220,23 +215,10 @@ body
         }
     }
 
-    .img-container.mobiliario-flatpack
+    .slide-container a picture img
     {
-        background-image: url('./Img/Flatpack/Portada_Render3/mobile-tablet.jpg');
-    }
-
-    .img-container.silla-ciclo
-    {
-        background-image: url('./Img/Ciclo/Portada_Detalle3/mobile-tablet.jpg');
-    }
-
-    .img-container.mesa-atlas
-    {
-        background-image: url('./Img/Atlas/Portada_Render2/mobile-tablet.jpg');
-    }
-
-    .img-container.img-container.envase-perfume
-    {
-        background-image: url('./Img/Vidrio/Portada_Render1/mobile-tablet.jpg');
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 /*Termina main*/
